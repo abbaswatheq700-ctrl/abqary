@@ -41,7 +41,7 @@ except Exception:  # pragma: no cover
 
 # ───────────────────────────── الإعدادات ─────────────────────────────
 
-TELEGRAM_BOT_TOKEN = "8993616984:AAHraq93xpqmc6UdvbmYbvDvZzxdDDCq6JQ"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 
 
 def _env(name, default=""):
